@@ -1,0 +1,15 @@
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.csproj.AssemblyReference.cache
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.GeneratedMSBuildEditorConfig.editorconfig
+D:\Seatworks\BingoCard\BingoCard\BingoCard\bin\Debug\netstandard2.0\BingoCard.deps.json
+D:\Seatworks\BingoCard\BingoCard\BingoCard\bin\Debug\netstandard2.0\BingoCard.dll
+D:\Seatworks\BingoCard\BingoCard\BingoCard\bin\Debug\netstandard2.0\ref\BingoCard.dll
+D:\Seatworks\BingoCard\BingoCard\BingoCard\bin\Debug\netstandard2.0\BingoCard.pdb
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.AssemblyInfoInputs.cache
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.AssemblyInfo.cs
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.csproj.CoreCompileInputs.cache
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.dll
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\ref\BingoCard.dll
+D:\Seatworks\BingoCard\BingoCard\BingoCard\obj\Debug\netstandard2.0\BingoCard.pdb

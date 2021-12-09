@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BingoCard.MainPage">
+
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "*"/>
+                <RowDefinition Height = "*"/>
+                <RowDefinition Height = "*"/>
+                <RowDefinition Height = "*"/>
+                <RowDefinition Height = "*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+                <ColumnDefinition Width = "*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="{Binding BNumbers[0].Value}" IsEnabled="{Binding BNumbers[0].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="0,0" FontSize="24" Grid.Row="0" Grid.Column="0" />
+            <Button Text="{Binding BNumbers[1].Value}" IsEnabled="{Binding BNumbers[1].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="0,1" FontSize="24" Grid.Row="0" Grid.Column="1" />
+            <Button Text="{Binding BNumbers[2].Value}" IsEnabled="{Binding BNumbers[2].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="0,2" FontSize="24" Grid.Row="0" Grid.Column="2" />
+            <Button Text="{Binding BNumbers[3].Value}" IsEnabled="{Binding BNumbers[3].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="0,3" FontSize="24" Grid.Row="0" Grid.Column="3" />
+            <Button Text="{Binding BNumbers[4].Value}" IsEnabled="{Binding BNumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="0,4" FontSize="24" Grid.Row="0" Grid.Column="4" />
+
+            <Button Text="{Binding INumbers[0].Value}" IsEnabled="{Binding INumbers[0].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="1,0" FontSize="24" Grid.Row="1" Grid.Column="0" />
+            <Button Text="{Binding INumbers[1].Value}" IsEnabled="{Binding INumbers[1].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="1,1" FontSize="24" Grid.Row="1" Grid.Column="1" />
+            <Button Text="{Binding INumbers[2].Value}" IsEnabled="{Binding INumbers[2].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="1,2" FontSize="24" Grid.Row="1" Grid.Column="2" />
+            <Button Text="{Binding INumbers[3].Value}" IsEnabled="{Binding INumbers[3].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="1,3" FontSize="24" Grid.Row="1" Grid.Column="3" />
+            <Button Text="{Binding INumbers[4].Value}" IsEnabled="{Binding INumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="1,4" FontSize="24" Grid.Row="1" Grid.Column="4" />
+
+            <Button Text="{Binding NNumbers[0].Value}" IsEnabled="{Binding NNumbers[0].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="2,0" FontSize="24" Grid.Row="2" Grid.Column="0" />
+            <Button Text="{Binding NNumbers[1].Value}" IsEnabled="{Binding NNumbers[1].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="2,1" FontSize="24" Grid.Row="2" Grid.Column="1" />
+            <Button Text="{Binding NNumbers[2].Value}" IsEnabled="{Binding NNumbers[2].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="2,2" FontSize="24" Grid.Row="2" Grid.Column="2" />
+            <Button Text="{Binding NNumbers[3].Value}" IsEnabled="{Binding NNumbers[3].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="2,3" FontSize="24" Grid.Row="2" Grid.Column="3" />
+            <Button Text="{Binding NNumbers[4].Value}" IsEnabled="{Binding NNumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="2,4" FontSize="24" Grid.Row="2" Grid.Column="4" />
+
+            <Button Text="{Binding GNumbers[0].Value}" IsEnabled="{Binding GNumbers[0].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="3,0" FontSize="24" Grid.Row="3" Grid.Column="0" />
+            <Button Text="{Binding GNumbers[1].Value}" IsEnabled="{Binding GNumbers[1].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="3,1" FontSize="24" Grid.Row="3" Grid.Column="1" />
+            <Button Text="{Binding GNumbers[2].Value}" IsEnabled="{Binding GNumbers[2].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="3,2" FontSize="24" Grid.Row="3" Grid.Column="2" />
+            <Button Text="{Binding GNumbers[3].Value}" IsEnabled="{Binding GNumbers[3].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="3,3" FontSize="24" Grid.Row="3" Grid.Column="3" />
+            <Button Text="{Binding GNumbers[4].Value}" IsEnabled="{Binding GNumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="3,4" FontSize="24" Grid.Row="3" Grid.Column="4" />
+
+            <Button Text="{Binding ONumbers[0].Value}" IsEnabled="{Binding ONumbers[0].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,0" FontSize="24" Grid.Row="4" Grid.Column="0" />
+            <Button Text="{Binding ONumbers[1].Value}" IsEnabled="{Binding ONumbers[1].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,1" FontSize="24" Grid.Row="4" Grid.Column="1" />
+            <Button Text="{Binding ONumbers[2].Value}" IsEnabled="{Binding ONumbers[2].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,2" FontSize="24" Grid.Row="4" Grid.Column="2" />
+            <Button Text="{Binding ONumbers[3].Value}" IsEnabled="{Binding ONumbers[3].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,3" FontSize="24" Grid.Row="4" Grid.Column="3" />
+            <Button Text="{Binding ONumbers[4].Value}" IsEnabled="{Binding ONumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,4" FontSize="24" Grid.Row="4" Grid.Column="4" />
+        </Grid>
+        <Button Text="Submit" Command="{Binding OnClickSubmitCommand}"/>
+    </StackLayout>
+
+</ContentPage>
