@@ -4,7 +4,7 @@
              x:Class="BingoCard.MainPage">
 
     <StackLayout>
-        <Grid>
+        <Grid RowSpacing="0" ColumnSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height = "*"/>
                 <RowDefinition Height = "*"/>
@@ -51,6 +51,7 @@
             <Button Text="{Binding ONumbers[4].Value}" IsEnabled="{Binding ONumbers[4].IsNotChosen }" Command="{Binding OnClickBingoNumberCommand}" CommandParameter="4,4" FontSize="24" Grid.Row="4" Grid.Column="4" />
         </Grid>
         <Button Text="Submit" Command="{Binding OnClickSubmitCommand}"/>
+        <Label Text="{Binding Message}" FontSize="24" HorizontalTextAlignment="Center"/>
     </StackLayout>
 
 </ContentPage>

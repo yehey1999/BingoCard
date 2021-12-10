@@ -13,6 +13,7 @@ namespace BingoCard.Services
     {
         private static string BaseUrl = "http://www.hyeumine.com";
         private static string UrlGetCard = "/getcard.php";
+        private static string UrlGetIsWinningCard = "/checkwin.php";
 
         private static HttpClient client = null;
 
@@ -37,5 +38,12 @@ namespace BingoCard.Services
             return card;
         }
 
+        public static async Task<bool> IsWinningCard(string playCardToken)
+        {
+            HttpResponseMessage response = await RestCall.GetAsync(BaseUrl + UrlGetIsWinningCard + "?playcard_token=" + playCardToken);
+            string responseContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(responseContent);
+            return responseContent.Equals("1") ? true : false;
+        } 
     }
 }

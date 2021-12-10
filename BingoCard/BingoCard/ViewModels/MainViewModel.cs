@@ -19,6 +19,7 @@ namespace BingoCard.ViewModels
         private ObservableCollection<BingoNumber> oNumbers = new ObservableCollection<BingoNumber>();
         public Command OnClickBingoNumberCommand { get; set; }
         public Command OnClickSubmitCommand { get; set; }
+        private string message = "";
 
         public ObservableCollection<BingoNumber> BNumbers
         {
@@ -48,6 +49,12 @@ namespace BingoCard.ViewModels
         {
             get => oNumbers;
             set => SetProperty(ref oNumbers, value);
+        }
+
+        public string Message
+        {
+            get => message;
+            set => SetProperty(ref message, value);
         }
 
         public async void OnInitialize()
@@ -109,9 +116,10 @@ namespace BingoCard.ViewModels
             OnPropertyChanged("ONumbers");
         }
 
-        private void OnClickSubmit()
+        private async void OnClickSubmit()
         {
-            Console.WriteLine("Submit");
+            bool isWinningCard = await RESTServices.IsWinningCard(cardOutput.playcard_token);
+            Message = isWinningCard ? "You won." : "Not a winning card";
         }
 
         public MainViewModel()
